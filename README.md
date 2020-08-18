@@ -4,13 +4,11 @@
 
 ```json
 {
-  "DurabilityLossMultiplier": 0.5
+  "DurabilityLossMultiplier": 0.0
 }
 ```
 
-By default, this plugin uses the same durability loss multiplier as the vanilla game, `0.5`. This multiplier affects how much durability that engine parts (e.g., pistons, spark plugs) lose when a modular car is damaged. To customize, simply alter the `DurabilityLossMultiplier` configuration option and reload the plugin. This will immediately apply to engines on all existing cars, and to any engines that are added to cars while the plugin is loaded. Compatible with plugins that spawn cars with engines, unless they override the same multiplier.
-
- **To make engine parts take no damage, set `DurabilityLossMultiplier: 0`.**
+**By default, this plugin completely disables damage to engine parts by using a multiplier of `0`.** The vanilla game uses `0.5`. This multiplier affects how much durability that engine parts (e.g., pistons, spark plugs) lose when a modular car is damaged. To customize, simply alter the `DurabilityLossMultiplier` configuration option and reload the plugin. This will immediately apply to engines on all existing cars, and to any engines that are added to cars while the plugin is loaded. Compatible with plugins that spawn cars with engines, unless they override the same multiplier.
 
 ## Uninstallation
 

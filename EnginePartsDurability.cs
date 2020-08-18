@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Oxide.Plugins
 {
-    [Info("Engine Parts Durability", "WhiteThunder", "1.0.0")]
+    [Info("Engine Parts Durability", "WhiteThunder", "1.1.0")]
     [Description("Alters engine part durability loss when modular cars are damaged.")]
     internal class EnginePartsDurability : CovalencePlugin
     {
@@ -44,7 +44,7 @@ namespace Oxide.Plugins
         internal class DurabilityConfig
         {
             [JsonProperty("DurabilityLossMultiplier")]
-            public float DurabilityLossMultiplier = 0.5f;
+            public float DurabilityLossMultiplier = 0;
         }
     }
 }
