@@ -1,7 +1,10 @@
 **Engine Parts Durability** allows you to alter the amount of durability that engine parts lose when a modular car is damaged.
 
+If you would rather your players not have to deal with engine parts, you can alternatively just use the [No Engine Parts](https://umod.org/plugins/no-engine-parts) plugin which allows car engines to work without engine parts.
+
 ## Configuration
 
+Default configuration:
 ```json
 {
   "DurabilityLossMultiplier": 0.0
@@ -12,4 +15,4 @@
 
 ## Uninstallation
 
-This is an amazing plugin with basically no performance impact, so you obviously will never want to uninstall this, but if you do, simply set the multiplier back to `0.5`, reload the plugin to apply the multiplier to all existing car engines, then unload/delete the plugin. Not necessary if you are wiping your server.
+To uninstall, set the multiplier to `0.5`, reload the plugin to apply the multiplier to all existing car engines, then unload/delete the plugin. Not necessary if you are wiping your server.
