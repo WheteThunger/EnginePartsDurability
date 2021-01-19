@@ -16,3 +16,25 @@ Default configuration:
 ## Uninstallation
 
 To uninstall, set the multiplier to `0.5`, reload the plugin to apply the multiplier to all existing car engines, then unload/delete the plugin. Not necessary if you are wiping your server.
+
+## Developer API
+
+#### API_RefreshMultiplier
+
+Plugins can call this API to refresh the durability loss multiplier for a particular `EngineStorage` container. This is useful if a plugin previously changed the internal damage multiplier and wants to reset it.
+
+```csharp
+void API_RefreshMultiplier(EngineStorage engineStorage)
+```
+
+## Developer Hooks
+
+#### OnEngineDamageMultiplierChange
+
+- Called when this plugin is about to change the internal damage multiplier of an engine storage container
+- Returning `false` will prevent the damage multiplier from being changed
+- Returning `null` will allow this plugin to change the damage multiplier
+
+```csharp
+object OnEngineDamageMultiplierChange(EngineStorage engineStorage, float desiredMultiplier)
+```
