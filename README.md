@@ -1,6 +1,10 @@
-**Engine Parts Durability** allows you to alter the amount of durability that engine parts lose when a modular car is damaged.
+**Engine Parts Durability** allows you to prevent engine parts from losing condition when a modular car is damaged.
 
-If you would rather your players not have to deal with engine parts, you can alternatively just use the [No Engine Parts](https://umod.org/plugins/no-engine-parts) plugin which allows car engines to work without engine parts.
+## Recommended related plugins
+
+- [Auto Engine Parts](https://umod.org/plugins/auto-engine-parts) -- Automatically fills engine modules with parts and prevents players from removing them
+  - The functionality of Engine Parts Durability is included in Auto Engine Parts, so if you configure that plugin to apply to all cars (instead of just cars owned by players with permission), then Engine Parts Durability is redundant and can be uninstalled
+- [No Engine Parts](https://umod.org/plugins/no-engine-parts) -- Allows car engines to work without engine parts
 
 ## Configuration
 
@@ -11,7 +15,7 @@ Default configuration:
 }
 ```
 
-**By default, this plugin completely disables damage to engine parts by using a multiplier of `0`.** The vanilla game uses `0.5`. This multiplier affects how much durability that engine parts (e.g., pistons, spark plugs) lose when a modular car is damaged. To customize, simply alter the `DurabilityLossMultiplier` configuration option and reload the plugin. This will immediately apply to engines on all existing cars, and to any engines that are added to cars while the plugin is loaded. Compatible with plugins that spawn cars with engines, unless they override the same multiplier.
+**By default, this plugin completely prevents damage to engine parts by using a multiplier of `0`.** The vanilla game uses `0.5`. This multiplier affects how much durability that engine parts (e.g., pistons, spark plugs) lose when a modular car is damaged. To customize, simply alter the `DurabilityLossMultiplier` configuration option and reload the plugin. This will immediately apply to engines on all existing cars, and to any engines that are added to cars while the plugin is loaded. Compatible with plugins that spawn cars with engines, unless they override the same multiplier.
 
 ## Uninstallation
 
